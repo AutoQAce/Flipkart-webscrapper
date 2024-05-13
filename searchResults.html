@@ -1,0 +1,555 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Search results | Udemy</title>
+
+<script nonce="wTwLuVf7S3kBSXdZDbtNRdM3ZLDexYrR5WAheeuAJW8=" type="text/javascript">
+        // Note: must be called before google tag manager is initialized in OptanonWrapper()
+        if (typeof window.dataLayer == 'undefined') {
+            window.dataLayer = window.dataLayer || [];
+        }
+
+        function callGtag() {
+            window.dataLayer.push(arguments);
+        }
+
+        var GRANTED = 'granted';
+        var DENIED = 'denied';
+
+        window.optOutConsent = {
+            ad_storage: GRANTED,
+            analytics_storage: GRANTED,
+            functionality_storage: GRANTED,
+            personalization_storage: GRANTED,
+            security_storage: GRANTED
+        }
+
+        window.optInConsent = {
+            ad_storage: DENIED,
+            analytics_storage: DENIED,
+            functionality_storage: DENIED,
+            personalization_storage: DENIED,
+            security_storage: GRANTED
+        }
+
+        // initialize the default settings to opt-in to protect against timing conditions with Google Analytics Loading
+        callGtag('consent', 'default', window.optInConsent)
+    </script>
+<script nonce="wTwLuVf7S3kBSXdZDbtNRdM3ZLDexYrR5WAheeuAJW8=" async src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="25ab360c-347c-4a85-8b93-1e0326234b75"></script>
+<script nonce="wTwLuVf7S3kBSXdZDbtNRdM3ZLDexYrR5WAheeuAJW8=" type="text/javascript">
+        window.isOneTrustActive = true;
+        window.OneTrustReadyHandlers = [];
+
+        var __attachOneTrustCustomHandlingOnlyOnce = (function () {
+            var hasExecuted = false;
+            return function () {
+                if (hasExecuted === true) {
+                    return false;
+                }
+                // Add consent change handler.
+                window.OneTrust.OnConsentChanged(function (consentEvent) {
+                    window.__onConsentChanged = window.__onConsentChanged || [];
+                    window.__onConsentChanged.push(consentEvent);
+                });
+                var queue = window.OneTrustReadyHandlers;
+                // Call the handlers that are queued after OneTrust is ready.
+                window.OneTrustReadyHandlers = {
+                    push: function (cb) {
+                        cb(window.OneTrust);
+                    }
+                };
+
+                // Call the handlers that were queued before OneTrust was ready.
+                for (var queueIndex = 0; queueIndex < queue.length; queueIndex++) {
+                    queue[queueIndex](window.OneTrust);
+                }
+                // Mark executed to prevent duplicate execution.
+                hasExecuted = true;
+            }
+        })();
+        function OptanonWrapper() {
+            __attachOneTrustCustomHandlingOnlyOnce();
+
+            var defaultDomainData = { ConsentModel: { Name: 'uninitialized'} };
+
+            // be extra conservative in how we load this data, as if OneTrust changes the contract
+            // we don't want to blow up the page load on every page on the site
+            var domainData = window.OneTrust.GetDomainData() || defaultDomainData;
+            var consentModel = domainData.ConsentModel ||  defaultDomainData.ConsentModel
+            var consentModelName = consentModel.Name ||  defaultDomainData.ConsentModel.Name
+
+            switch (consentModelName) {
+                case 'opt-out':
+                    this.callGtag('consent', 'default', window.optOutConsent);
+                    break;
+                case 'opt-in':
+                default:
+                    this.callGtag('consent', 'default', window.optInConsent);
+                    break;
+            }
+        }
+    </script>
+
+<script nonce="wTwLuVf7S3kBSXdZDbtNRdM3ZLDexYrR5WAheeuAJW8=">
+      (function(h,o,u,n,d) {
+        h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
+        d=o.createElement(u);d.async=1;d.src=n
+        n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
+      })(window,document,'script','https://www.datadoghq-browser-agent.com/us1/v4/datadog-rum.js','DD_RUM')
+      window.DD_RUM.onReady(function() {
+        window.DD_RUM.init({
+          clientToken: 'pubdf923e39e855ee202dba6e1cc60e59af',
+          applicationId: 'b904100c-0f95-4879-930d-2fd0bb993287',
+          site: 'datadoghq.com',
+          service: 'browser.request',
+          env: 'production',
+          version: 'fcc57e0a39d7c3c7b697fd7bb038b5cc002ce179',
+          allowedTracingOrigins: [/https:\/\/.*\.udemy\.(com|cn)/],
+          traceSampleRate: 100,
+          sampleRate: 1,
+          sessionReplaySampleRate: 1,
+          trackUserInteractions: true,
+          trackFrustrations: true,
+          trackResources: true,
+          trackLongTasks: true,
+          defaultPrivacyLevel: 'mask',
+        });
+
+        DD_RUM.startSessionReplayRecording();
+      })
+    </script>
+<meta name="description" content="Udemy is an online learning and teaching marketplace with over 213,000 courses and 62 million students. Learn programming, marketing, data science and more."><meta name="title" content="Online Courses - Learn Anything, On Your Schedule | Udemy"><meta name="medium" content="mult"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"><meta name="twitter:card" content="summary_large_image"><meta name="apple-itunes-app" content="app-id=562413829, affiliate-data=ct=Safari_SmartBanner&amp;amp;pt=1240482"><meta name="google-play-app" content="app-id=com.udemy.android"><meta name="robots" content="noindex,follow"><meta property="fb:app_id" content="313137469260"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="Online Courses - Learn Anything, On Your Schedule | Udemy"><meta property="og:url" content="https://www.udemy.com/courses/search/"><meta property="og:description" content="Udemy is an online learning and teaching marketplace with over 213,000 courses and 62 million students. Learn programming, marketing, data science and more."><meta property="og:image" content="https://s.udemycdn.com/meta/default-meta-image-v2.png"><meta property="og:image:secure_url" content="https://s.udemycdn.com/meta/default-meta-image-v2.png"><meta property="og:type" content="video_lecture"><meta property="og:site_name" content="Udemy"><meta property="og:locale" content="en_US"><meta name="twitter:domain" content="www.udemy.com"><meta name="twitter:title" content="Online Courses - Learn Anything, On Your Schedule | Udemy"><meta name="twitter:url" content="https://www.udemy.com/courses/search/"><meta name="twitter:description" content="Udemy is an online learning and teaching marketplace with over 213,000 courses and 62 million students. Learn programming, marketing, data science and more."><meta name="twitter:image" content="https://s.udemycdn.com/meta/default-meta-image-v2.png"><meta name="twitter:site" content="@udemy">
+<link rel="preload" as="font" type="font/woff2" href="/staticx/udemy/fonts/Udemy-Sans-Regular-v1.woff2" crossorigin="anonymous" />
+<link rel="preload" as="font" type="font/woff2" href="/staticx/udemy/fonts/Udemy-Sans-Bold-v1.woff2" crossorigin="anonymous" />
+<style type="text/css">
+    @font-face {
+        font-family: 'Udemy Sans';
+        font-style: normal;
+        font-weight: 400; /* To match token @font-weight-normal */
+        font-display: fallback;
+        src: local('Udemy Sans Regular'),
+             local('UdemySans-Regular'),
+             url('/staticx/udemy/fonts/Udemy-Sans-Regular-v1.woff2') format('woff2');
+    }
+
+    @font-face {
+        font-family: 'Udemy Sans';
+        font-style: normal;
+        font-weight: 700; /* To match token @font-weight-bold */
+        font-display: fallback;
+        src: local('Udemy Sans Bold'),
+             local('UdemySans-Bold'),
+             url('/staticx/udemy/fonts/Udemy-Sans-Bold-v1.woff2') format('woff2');
+    }
+
+    @font-face {
+        font-family: SuisseWorks;
+        font-style: normal;
+        font-weight: 700; /* To match token @font-weight-bold */
+        font-display: fallback;
+        src: local('SuisseWorks Bold'),
+             local('SuisseWorks-Bold'),
+             url('/staticx/udemy/fonts/SuisseWorks-Bold-v1.woff2') format('woff2');
+    }
+</style>
+<script nonce="wTwLuVf7S3kBSXdZDbtNRdM3ZLDexYrR5WAheeuAJW8=" async src="https://frontends.udemycdn.com/design-system/icons/v6/icon-spritemap.js"></script>
+<link type="text/css" rel="stylesheet" href="/staticx/udemy/js/webpack/entry-main.b522ea0abcf3d6df1e25.css" />
+<link type="text/css" rel="stylesheet" href="/staticx/udemy/js/webpack/common-app-css.7c61d6082ce1cb8e0961.css" />
+<link type="text/css" rel="stylesheet" href="/staticx/udemy/js/webpack/search-server-side.cebf64587a95a74be96d.css" />
+<link type="text/css" rel="stylesheet" href="/staticx/udemy/js/webpack/search-udlite-app.0fa50f6c35131416a651.css" />
+<link rel="preconnect" href="https://s.udemycdn.com/" />
+<link rel="preconnect" href="https://s.udemycdn.com/" crossorigin />
+<link rel="preconnect" href="https://img-c.udemycdn.com/" />
+<link rel="preconnect" href="https://img-b.udemycdn.com/" />
+<link rel="dns-prefetch" href="https://s.udemycdn.com/" />
+<link rel="dns-prefetch" href="https://img-c.udemycdn.com/" />
+<link rel="dns-prefetch" href="https://img-b.udemycdn.com/" />
+<link nonce="wTwLuVf7S3kBSXdZDbtNRdM3ZLDexYrR5WAheeuAJW8=" rel="preload" as="script" href="/staticx/udemy/js/webpack/search-udlite-app.168fd45d31a33d328d99.js" />
+<link nonce="wTwLuVf7S3kBSXdZDbtNRdM3ZLDexYrR5WAheeuAJW8=" rel="preload" as="script" href="/staticx/udemy/js/webpack/common-mobile-udlite-app.48a29574a16ca30c8bb4.js" />
+<link rel="apple-touch-icon" sizes="180x180" href="/staticx/udemy/images/v7/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/staticx/udemy/images/v8/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/staticx/udemy/images/v8/favicon-16x16.png" />
+<link rel="manifest" href="/staticx/udemy/images/v7/site-manifest.json" />
+<meta name="application-name" content="Udemy" />
+<meta name="msapplication-TileColor" content="#a435f0" />
+<meta name="msapplication-TileImage" content="/staticx/udemy/images/v7/mstile-144x144.png">
+<meta name="msapplication-config" content="/staticx/udemy/images/v7/browserconfig.xml" />
+<meta name="theme-color" content="#ffffff" />
+<script nonce="wTwLuVf7S3kBSXdZDbtNRdM3ZLDexYrR5WAheeuAJW8=">
+    window.UD = window.UD || {};
+    window.UD.Config = {"version":"fcc57e0a39d7c3c7b697fd7bb038b5cc002ce179","env":"PROD","graphql_federation_endpoint":"https://www.udemy.com/graphql/","marketplace_country":{"_class":"country","id":"SG","iso_code":"SGP","title":"Singapore","currency":"sgd"},"price_country":{"_class":"country","id":"SG","currency":"sgd","currency_symbol":"S$","currency_decimal_places":2,"currency_formatter":{"currency":"sgd","symbol":"S$","locale":"en_US","decimal":".","group":",","pattern":"!#,##0.00","scale":2},"usd_currency_formatter":{"currency":"usd","symbol":"$","locale":"en_US","decimal":".","group":",","pattern":"!#,##0.00","scale":2}},"supported_languages":[{"locale":"en_US","name":"English","lang":"en"},{"locale":"de_DE","name":"Deutsch","lang":"de"},{"locale":"es_ES","name":"Espa\u00f1ol","lang":"es"},{"locale":"fr_FR","name":"Fran\u00e7ais","lang":"fr"},{"locale":"id_ID","name":"Bahasa Indonesia","lang":"id"},{"locale":"it_IT","name":"Italiano","lang":"it"},{"locale":"ja_JP","name":"\u65e5\u672c\u8a9e","lang":"ja"},{"locale":"ko_KR","name":"\ud55c\uad6d\uc5b4","lang":"ko"},{"locale":"nl_NL","name":"Nederlands","lang":"nl"},{"locale":"pl_PL","name":"Polski","lang":"pl"},{"locale":"pt_BR","name":"Portugu\u00eas","lang":"pt"},{"locale":"ro_RO","name":"Rom\u00e2n\u0103","lang":"ro"},{"locale":"ru_RU","name":"\u0420\u0443\u0441\u0441\u043a\u0438\u0439","lang":"ru"},{"locale":"th_TH","name":"\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22","lang":"th"},{"locale":"tr_TR","name":"T\u00fcrk\u00e7e","lang":"tr"},{"locale":"vi_VN","name":"Ti\u1ebfng Vi\u1ec7t","lang":"vi"},{"locale":"zh_CN","name":"\u4e2d\u6587(\u7b80\u4f53)","lang":"zh-cn"},{"locale":"zh_TW","name":"\u4e2d\u6587(\u7e41\u9ad4)","lang":"zh-tw"}],"brand":{"_class":"brand","title":"Udemy","identifier":"sg","has_organization":false,"is_messaging_enabled":true,"is_discussions_enabled":true,"is_feed_commenting_enabled":true,"is_teaching_enabled":true,"is_add_reviews_enabled":true,"is_mobile_app_enabled":true,"is_import_courses_enabled":true,"is_social_sharing_enabled":true,"is_external_sources_enabled":true,"is_third_party_marketing_enabled":true,"is_government":false,"is_sso_enabled":false,"is_team":false,"logo_url_2x":"/staticx/udemy/images/v7/logo-udemy.svg","link_bar_nav_list_id":"ud-link-bar","is_share_to_workplace_enabled":false,"is_share_on_slack_enabled":false,"is_share_to_ms_teams_enabled":false,"is_profile_functions_enabled":true,"is_user_profiles_public":true,"product_logo":"/staticx/udemy/images/v7/logo-udemy.svg","product_logo_light":"/staticx/udemy/images/v7/logo-udemy-inverted.svg","product_logo_aspect_ratio":2.6785714285714284,"product_name":"Udemy","organization":false},"features":{"course_badge":true,"footer":{"links":{"about":true,"contact":true,"affiliates":true,"blog":true,"business":true,"careers":true,"benesse_corporate_page":false,"commercial_transactions_law_page":true,"teach":true}},"hello_bar":{"instructor":false,"pricing":true,"terms":true},"notice":{"instructor_bar":false,"smart_bar":true,"ufb_smart_bar":false},"notifications":true,"report_abuse":true,"shopping_cart":true,"wishlist":true,"social_share":{"email":true},"reviews":{"show_user_avatar":true},"zendesk_chat":false,"ufb_notices":true,"ufb_notices_footer":{"top_com":true},"collect_performance_rum":true,"braze_web_push":false,"pendo_enabled":false,"course_landing_page":{"deal_badge":true,"incentives":{"access_tv":true,"lifetime_access":true},"instructor_bio":{"image":true,"social_links":true,"stats":true},"money_back_guarantee":true},"discount":{"change_alerts":true},"organization":{"auth":{"scim_api_enabled":false},"is_learner_goal_and_interest_collection_enabled":true,"manage_satisfaction":{"satisfaction":false},"learning_path":{"enabled":false,"copy_learning_path_item":false,"pro_path":false,"pro_path_hidden":false},"course_taking":{"student_assignment_submissions_enabled":true},"assignment_improvement_all_users":true,"manage_insights":{"path_insights_v2":false},"allow_only_plain_text_messaging":false,"is_measure_competence_release_train_enabled":false,"labs":{"are_beta_features_enabled":false},"is_fullstory_enabled":true,"is_ub_license_pools_enabled":false,"is_custom_xapi_self_serve_enabled":false,"is_user_reactivation_notification_enabled":true,"hide_org_user_search_for_group_admins":false,"is_export_insights_to_pdf_enabled":false,"is_learner_engagement_experiment_enabled":false,"is_learner_engagement_experiment_variant_b_enabled":false,"is_learner_engagement_experiment_variant_c_enabled":false,"is_course_versioning_enabled":false,"is_learner_progress_service_integration_enabled":false,"should_fetch_insights_from_las":true,"is_learning_communities_enabled":false,"is_shaka_player_enabled":false,"is_badging_assertions_upload_enabled":true,"hide_org_wide_learner_data":false,"should_serve_realtime_data_from_las":true,"is_user_activity_reports_v2_enabled":true,"is_improved_admin_landing_experience_enabled":true},"course":{"discussions":{"view":true},"announcements":{"comments":{"view":true}},"students":{"unenroll":false},"refundable":true},"bundle":{"instructor_bio":{"social_links":true}},"home":{"my_courses":{"free_label":true,"privacy":true,"revenue":true},"signup_cta":true,"ufb_ad":{"default":true,"jp":false}},"logged_in_home":{"linkbar_level_2":true,"ufb_ad":false},"course_review":{"clp_review_search":true,"leave_feedback":true}},"app_name":"search","js_bundle":"modern","url":{"to_root":"https://www.udemy.com/","to_app":"https://www.udemy.com/","to_images":"https://www.udemy.com/staticx/udemy/images/","to_js":"https://www.udemy.com/staticx/udemy/js/"},"drm_license_server_url_template":"{base_url}media-license-server/validate-auth-token?drm_type={drm_type}\u0026auth_token={auth_token}","drm_fairplay_certificate_cdn_domain":"img-c.udemycdn.com","third_party":{"google_analytics_id":"UA-12366301-1","google_analytics_id_for_course_taking":"UA-12366301-45","google_tag_manager_id":"GTM-7BF3X","google_analytics_id_for_ufb_only":"UA-12366301-47","facebook_app_id":"313137469260","raven_dsn":"https://369c830fbf534485a068ab919d71b80d@sentry.io/38617","sift_account":"78b4b13f0a","uft_stripe_publishable_key":"pk_live_dCyHJcZsk8NaNwx1PiRSpqqq","branch_metrics":{"ios_download_url":"http://ude.my/ios","ios_ufb_download_url":"http://ude.my/ios-ufb","android_download_url":"http://ude.my/android","android_ufb_download_url":"http://ude.my/android-ufb"},"pusher":{"key":"dd9e21a517a37660588c","coding_exercise_event":"coding-exercise-evaluated"},"zendesk":{"refund_form_id":406368},"filestack":{"key":"A0EHlHYkEQbCTpDvxEwAYz"},"paypal":{"appid":"ASRJrkbBfTwvxWNTn-QRakeimIbsjmBuK5hWj4zq3QJL46CKIYNb-RiKjrTSe-2iZ-EFrCCuXGZTxHjY","authend":"live","returnurl":"https://www.udemy.com/user/paypal-login-return"},"s3":{"asset":{"key":"AKIA5IZMAQTG6TBSZJ67","bucket_url":"https://udemy-web-upload-transitional.s3.amazonaws.com"},"image_asset":{"key":"AKIA5IZMAQTG6TBSZJ67","bucket_url":"https://udemy-image-web-upload.s3.amazonaws.com"}},"storage_static_asset_base_url":"https://s.udemycdn.com/"}};
+    window.UD.experiment = {};
+    window.UD.request = {"locale":"en_US","language":"en","third_party_location":"https://www.udemy.com/courses/search/?q=Data+Science","navigation_locale":"en_US","language_simple_english_title":"English","termsBarType":"","termsBarUrls":"","isMobile":true,"isTablet":false,"isPC":false,"serverTimestamp":"2024-04-28T08:43:10.512670+00:00","is_tapen_access_domain":false,"is_bot":true};
+    window.UD.request.clientTimestamp = new Date().toISOString();
+    window.UD.site_stats = {"default":{"num_students_m":"62M","num_students_million":"62 million","num_courses":213000,"num_courses_rounded":210000,"num_instructors":74000,"num_topics":2000,"num_course_languages":75,"num_course_enrollments_m":"830M","num_course_enrollments_million":"830 million","num_countries_taught":180},"organizations":{"num_courses":25000,"num_courses_rounded":25000,"num_instructors":1500,"num_enterprise_customers":15000}};
+    window.UD.me = {"isLoading":false,"is_authenticated":false,"learning_languages":[],"settings":{},"encrypted_affiliate_uid":"","encrypted_affiliate_email":"","request_country_code":"SG","ip_address":"118.200.96.255"};
+    window.UD.meProperties = ["_class","id","email","display_name","job_title","initials","title","time_zone","country","created","locale","language","learning_languages","name","surname","image_50x50","image_100x100","settings","encrypted_affiliate_uid","encrypted_affiliate_email","encrypted_id","has_made_paid_purchase","number_of_courses_purchased","organization","url","request_country_code","ip_address"];
+    window.UD.visiting = {"isLoading":false,"visitor_uuid":"6dc1bc20bed040a88a1ae9abb9e2dd18","is_first_time_visitor":true,"first_visit_time":"2024-04-28T08:43:10.470Z"};
+    window.UD.visitingProperties = ["visitor_uuid","is_first_time_visitor","first_visit_time"];
+    window.UD.userSpecificTrackingParams = {"isLoading":false,"tracking_enabled":true};
+    window.UD.userSpecificTrackingProperties = ["tracking_enabled"];
+    window.UD.userAgnosticTrackingParams = {"page_key":"search"};
+
+    
+</script>
+<script nonce="wTwLuVf7S3kBSXdZDbtNRdM3ZLDexYrR5WAheeuAJW8=">
+        window.udPerformanceEnabled = true;
+    </script>
+<script nonce="wTwLuVf7S3kBSXdZDbtNRdM3ZLDexYrR5WAheeuAJW8=">
+    
+    window.GoogleAnalyticsObject = 'ga';
+    window.ga = function () {
+        (window.ga.q = window.ga.q || []).push(arguments);
+    };
+    window.ga.l = 1 * new Date();
+
+    UD.GoogleAnalytics = UD.GoogleAnalytics || {};
+    UD.GoogleAnalytics.createAccount = function (accountId, propertyName, domainName) {
+        if (accountId) {
+            if (propertyName) {
+                // Required for multiple trackers
+                window.ga('create', accountId, 'auto', {'name': propertyName, 'cookieDomain': domainName || 'none',
+                    'siteSpeedSampleRate': 10});
+            } else {
+                window.ga('create', accountId, 'auto', {'siteSpeedSampleRate': 10});
+                window.ga('require', 'displayfeatures'); // Enables retargeting
+            }
+            window.ga('set', {
+                'anonymizeIp': true,
+                'location' : ""
+            });
+        }
+    };
+    UD.GoogleAnalytics.createAccount(UD.Config.third_party.google_analytics_id);
+</script>
+</head>
+<body id="sg" class="  udemy ">
+<div class="ud-main-content-wrapper">
+<div class="ud-app-loader ud-component--header-v6--header ud-header" data-module-id="common/mobile" data-module-args="{&quot;isLoggedIn&quot;:false,&quot;isInstructorSignupEnabled&quot;:false,&quot;mobileAppLink&quot;:{&quot;url&quot;:&quot;/mobile/&quot;},&quot;tryUFBPlacements&quot;:{&quot;bar&quot;:&quot;ufb_header&quot;,&quot;mobile&quot;:&quot;ufb_header&quot;,&quot;profile&quot;:&quot;account-menu&quot;},&quot;currentLocale&quot;:&quot;en_US&quot;,&quot;searchPhrase&quot;:&quot;Data Science&quot;,&quot;persistentSearch&quot;:false}" data-module-priority="-10"><div data-unique-id="73" style="display:none"></div><span id="header-toggle-search-bar" class="ud-full-page-overlay-checkbox" data-type="checkbox" data-checked style="display:none"></span><span class="mobile-header-module--mark--fhZiH"></span><div class="ud-header mobile-header-module--header--NNgAJ mobile-header-module--with-shadow--g6bsq" data-testid="mobile-header"><div class="mobile-header-module--row--i-rau"><button type="button" class="ud-btn ud-btn-large ud-btn-ghost ud-heading-md ud-btn-icon ud-btn-icon-large ud-mobile-header-btn" data-purpose="side-menu-opener" data-css-toggle-id="header-toggle-side-nav"><svg aria-label="Open side drawer" role="img" focusable="false" class="ud-icon ud-icon-medium ud-icon-color-neutral"><use xlink:href="#icon-menu"></use></svg></button><div class="mobile-header-module--button-spacer--W5sFK"></div><div class="mobile-header-module--row--i-rau mobile-header-module--middle--x2Wvk"><a href="/"><img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Udemy" width="75" height="28" style="vertical-align:middle" loading="lazy" /></a></div><button type="button" class="ud-btn ud-btn-large ud-btn-ghost ud-heading-md ud-btn-icon ud-btn-icon-large ud-mobile-header-btn" data-css-toggle-id="header-toggle-search-bar"><svg aria-label="Open search" role="img" focusable="false" id="mobile-header-open-search-icon" class="ud-icon ud-icon-medium ud-icon-color-neutral"><use xlink:href="#icon-search"></use></svg></button><a href="/cart/" class="ud-btn ud-btn-large ud-btn-ghost ud-heading-md ud-btn-icon ud-btn-icon-large ud-mobile-header-btn"><svg aria-label="Go to cart" role="img" focusable="false" class="ud-icon ud-icon-medium ud-icon-color-neutral"><use xlink:href="#icon-cart"></use></svg></a></div></div><div class="mobile-header-module--search-bar--Ju-oh mobile-header-module--search-bar-layer--LV6h7" role="dialog" tabindex="-1" aria-labelledby="header-mobile-search-bar-title"><button type="button" class="ud-btn ud-btn-large ud-btn-ghost ud-heading-md ud-btn-icon ud-btn-icon-large ud-mobile-header-btn mobile-header-module--search-bar-close--ucByz" data-css-toggle-id="header-toggle-search-bar"><svg aria-label="Close search" role="img" focusable="false" class="ud-icon ud-icon-medium ud-icon-color-neutral"><use xlink:href="#icon-close"></use></svg></button><span class="ud-sr-only">Search bar</span><div locale="en_US" lang="en" id="header-mobile-search-bar" class="ud-search-form-autocomplete mobile-header-module--search-bar-form--oGESn ud-form-group"><label class="ud-sr-only ud-form-label ud-heading-sm" for="header-mobile-search-bar">Search for anything</label><form action="/courses/search/" class="ud-search-form-autocomplete-input-group ud-search-form-autocomplete-input-group-reversed"><input type="hidden" name="src" value="ukw" /><input type="text" aria-invalid="false" name="q" data-testid="search-input" placeholder="Search for anything" autoComplete="off" value="Data Science" role="combobox" aria-autocomplete="both" aria-haspopup="true" aria-expanded="false" aria-controls="header-mobile-search-bar-menu-content-items" id="header-mobile-search-bar" class="ud-text-input ud-text-input-large ud-text-md ud-search-form-autocomplete-input js-header-search-field" /><button type="submit" class="ud-btn ud-btn-large ud-btn-ghost ud-heading-md ud-btn-icon ud-btn-icon-large"><svg aria-label="Submit search" role="img" focusable="false" class="ud-icon ud-icon-medium ud-icon-color-neutral"><use xlink:href="#icon-search"></use></svg></button></form></div></div><div class="side-drawer-module--dialog-container--lYo2X"><span id="header-toggle-side-nav" class="ud-full-page-overlay-checkbox side-drawer-module--main-drawer-checkbox--IbTmn" data-type="checkbox" data-checked style="display:none"></span><div role="presentation" class="ud-btn ud-btn-large ud-btn-link ud-heading-md full-page-overlay-module--full-page-overlay--LdwKq" data-css-toggle-id="header-toggle-side-nav"></div><span id="header-toggle-side-nav-main" class="js-drawer-radio side-drawer-module--drawer-radio--Yvt1r" data-type="radio" data-name="header-toggle-side-nav-radio-group" data-checked="checked" style="display:none"></span><div class="js-drawer side-drawer-module--side-drawer--P2LMq side-drawer-module--side-left--ET1w8" role="dialog" tabindex="-1" aria-labelledby="u73-side-drawer-title--4"><nav class="side-drawer-module--drawer-container--riV-1"><div class="mobile-nav-module--nav--JtHq- side-drawer-module--drawer-content--Kws-9"><h2 id="u73-side-drawer-title--4" class="ud-heading-lg ud-sr-only">Site navigation</h2><h2 class="ud-heading-sm mobile-nav-module--nav-section-heading--KGcLD">Most popular</h2><ul class="ud-unstyled-list ud-block-list mobile-nav-module--nav-section--hUO4e"><li><div class="mobile-nav-module--nav-item--y8jFC ud-block-list-item ud-block-list-item-large ud-block-list-item-neutral ud-text-md"><div class="ud-block-list-item-content ud-block-list-item-content-loading"> </div></div></li><li><div class="mobile-nav-module--nav-item--y8jFC ud-block-list-item ud-block-list-item-large ud-block-list-item-neutral ud-text-md"><div class="ud-block-list-item-content ud-block-list-item-content-loading"> </div></div></li><li><div class="mobile-nav-module--nav-item--y8jFC ud-block-list-item ud-block-list-item-large ud-block-list-item-neutral ud-text-md"><div class="ud-block-list-item-content ud-block-list-item-content-loading"> </div></div></li><li><div class="mobile-nav-module--nav-item--y8jFC ud-block-list-item ud-block-list-item-large ud-block-list-item-neutral ud-text-md"><div class="ud-block-list-item-content ud-block-list-item-content-loading"> </div></div></li><li><div class="mobile-nav-module--nav-item--y8jFC ud-block-list-item ud-block-list-item-large ud-block-list-item-neutral ud-text-md"><div class="ud-block-list-item-content ud-block-list-item-content-loading"> </div></div></li><li><div class="mobile-nav-module--nav-item--y8jFC ud-block-list-item ud-block-list-item-large ud-block-list-item-neutral ud-text-md"><div class="ud-block-list-item-content ud-block-list-item-content-loading"> </div></div></li><li><div class="mobile-nav-module--nav-item--y8jFC ud-block-list-item ud-block-list-item-large ud-block-list-item-neutral ud-text-md"><div class="ud-block-list-item-content ud-block-list-item-content-loading"> </div></div></li><li><div class="mobile-nav-module--nav-item--y8jFC ud-block-list-item ud-block-list-item-large ud-block-list-item-neutral ud-text-md"><div class="ud-block-list-item-content ud-block-list-item-content-loading"> </div></div></li><li><div class="mobile-nav-module--nav-item--y8jFC ud-block-list-item ud-block-list-item-large ud-block-list-item-neutral ud-text-md"><div class="ud-block-list-item-content ud-block-list-item-content-loading"> </div></div></li><li><div class="mobile-nav-module--nav-item--y8jFC ud-block-list-item ud-block-list-item-large ud-block-list-item-neutral ud-text-md"><div class="ud-block-list-item-content ud-block-list-item-content-loading"> </div></div></li><li><div class="mobile-nav-module--nav-item--y8jFC ud-block-list-item ud-block-list-item-large ud-block-list-item-neutral ud-text-md"><div class="ud-block-list-item-content ud-block-list-item-content-loading"> </div></div></li></ul><h2 class="ud-heading-sm mobile-nav-module--nav-section-heading--KGcLD">More from Udemy</h2><ul class="ud-unstyled-list ud-block-list mobile-nav-module--nav-section--hUO4e"><li><a class="ud-btn ud-btn-large ud-btn-ghost ud-text-md mobile-nav-module--nav-item--y8jFC ud-block-list-item ud-block-list-item-large ud-block-list-item-neutral" href="/udemy-business/request-demo-mx/?ref=ufb_header_mobile&amp;locale=en_US" target="_blank" rel="noopener noreferrer" data-purpose="try-ufb-link"><div class="ud-block-list-item-content"><div>Udemy Business</div></div></a></li><li><a class="ud-btn ud-btn-large ud-btn-ghost ud-text-md mobile-nav-module--nav-item--y8jFC ud-block-list-item ud-block-list-item-large ud-block-list-item-neutral" href="/mobile/" target="_blank" rel="noopener noreferrer"><div class="ud-block-list-item-content">Get the app</div></a></li><li><a class="ud-btn ud-btn-large ud-btn-ghost ud-text-md mobile-nav-module--nav-item--y8jFC ud-block-list-item ud-block-list-item-large ud-block-list-item-neutral" href="/invite/"><div class="ud-block-list-item-content">Invite friends</div></a></li><li><a class="ud-btn ud-btn-large ud-btn-ghost ud-text-md mobile-nav-module--nav-item--y8jFC ud-block-list-item ud-block-list-item-large ud-block-list-item-neutral" href="/support/" target="_blank" rel="noopener noreferrer"><div class="ud-block-list-item-content">Help</div></a></li></ul><div class="mobile-nav-module--nav-item--y8jFC" data-testid="language-selector"><button type="button" class="ud-btn ud-btn-medium ud-btn-secondary ud-text-md language-selector-button-module--button--iLcUV"><svg aria-hidden="true" focusable="false" class="ud-icon ud-icon-small ud-icon-color-neutral"><use xlink:href="#icon-language"></use></svg><span>English</span></button></div></div><div></div></nav><button type="button" class="ud-btn ud-btn-large ud-btn-white-solid ud-btn-round ud-heading-md ud-btn-icon ud-btn-icon-large ud-btn-icon-round dialog-close-button-module--close-btn--KgmlW side-drawer-module--close-btn--nyYl0" data-purpose="close-btn" aria-label="Close side drawer" data-css-toggle-id="header-toggle-side-nav"><svg aria-hidden="true" focusable="false" class="ud-icon ud-icon-medium ud-icon-color-neutral"><use xlink:href="#icon-close"></use></svg></button></div></div><nav aria-hidden="true" class="seo-links-module--seo-nav--w7M3w"></nav></div>
+<nav aria-hidden="true" style="position:fixed;top:0;left:-28rem;width:28rem;height:100%;">
+<a data-id="288" class="js-side-nav-cat" href="/courses/development/" tabindex="-1">Development</a>
+<div>
+<a data-id="8" class="js-side-nav-cat js-subcat" href="/courses/development/web-development/" tabindex="-1">Web Development</a>
+<a data-id="558" class="js-side-nav-cat js-subcat" href="/courses/development/data-science/" tabindex="-1">Data Science</a>
+<a data-id="10" class="js-side-nav-cat js-subcat" href="/courses/development/mobile-apps/" tabindex="-1">Mobile Development</a>
+<a data-id="12" class="js-side-nav-cat js-subcat" href="/courses/development/programming-languages/" tabindex="-1">Programming Languages</a>
+<a data-id="14" class="js-side-nav-cat js-subcat" href="/courses/development/game-development/" tabindex="-1">Game Development</a>
+<a data-id="16" class="js-side-nav-cat js-subcat" href="/courses/development/databases/" tabindex="-1">Database Design &amp; Development</a>
+<a data-id="18" class="js-side-nav-cat js-subcat" href="/courses/development/software-testing/" tabindex="-1">Software Testing</a>
+<a data-id="20" class="js-side-nav-cat js-subcat" href="/courses/development/software-engineering/" tabindex="-1">Software Engineering</a>
+<a data-id="362" class="js-side-nav-cat js-subcat" href="/courses/development/development-tools/" tabindex="-1">Software Development Tools</a>
+<a data-id="575" class="js-side-nav-cat js-subcat" href="/courses/development/no-code-development/" tabindex="-1">No-Code Development</a>
+</div>
+<a data-id="268" class="js-side-nav-cat" href="/courses/business/" tabindex="-1">Business</a>
+<div>
+<a data-id="26" class="js-side-nav-cat js-subcat" href="/courses/business/entrepreneurship/" tabindex="-1">Entrepreneurship</a>
+<a data-id="28" class="js-side-nav-cat js-subcat" href="/courses/business/communications/" tabindex="-1">Communication</a>
+<a data-id="30" class="js-side-nav-cat js-subcat" href="/courses/business/management/" tabindex="-1">Management</a>
+<a data-id="32" class="js-side-nav-cat js-subcat" href="/courses/business/sales/" tabindex="-1">Sales</a>
+<a data-id="34" class="js-side-nav-cat js-subcat" href="/courses/business/strategy/" tabindex="-1">Business Strategy</a>
+<a data-id="36" class="js-side-nav-cat js-subcat" href="/courses/business/operations/" tabindex="-1">Operations</a>
+<a data-id="38" class="js-side-nav-cat js-subcat" href="/courses/business/project-management/" tabindex="-1">Project Management</a>
+<a data-id="40" class="js-side-nav-cat js-subcat" href="/courses/business/business-law/" tabindex="-1">Business Law</a>
+<a data-id="44" class="js-side-nav-cat js-subcat" href="/courses/business/analytics-and-intelligence/" tabindex="-1">Business Analytics &amp; Intelligence</a>
+<a data-id="48" class="js-side-nav-cat js-subcat" href="/courses/business/human-resources/" tabindex="-1">Human Resources</a>
+<a data-id="50" class="js-side-nav-cat js-subcat" href="/courses/business/industry/" tabindex="-1">Industry</a>
+<a data-id="354" class="js-side-nav-cat js-subcat" href="/courses/business/e-commerce/" tabindex="-1">E-Commerce</a>
+<a data-id="52" class="js-side-nav-cat js-subcat" href="/courses/business/media/" tabindex="-1">Media</a>
+<a data-id="58" class="js-side-nav-cat js-subcat" href="/courses/business/real-estate/" tabindex="-1">Real Estate</a>
+<a data-id="60" class="js-side-nav-cat js-subcat" href="/courses/business/other-business/" tabindex="-1">Other Business</a>
+</div>
+<a data-id="328" class="js-side-nav-cat" href="/courses/finance-and-accounting/" tabindex="-1">Finance &amp; Accounting</a>
+<div>
+<a data-id="530" class="js-side-nav-cat js-subcat" href="/courses/finance-and-accounting/accounting-bookkeeping/" tabindex="-1">Accounting &amp; Bookkeeping</a>
+<a data-id="532" class="js-side-nav-cat js-subcat" href="/courses/finance-and-accounting/compliance/" tabindex="-1">Compliance</a>
+<a data-id="534" class="js-side-nav-cat js-subcat" href="/courses/finance-and-accounting/cryptocurrency-and-blockchain/" tabindex="-1">Cryptocurrency &amp; Blockchain</a>
+<a data-id="536" class="js-side-nav-cat js-subcat" href="/courses/finance-and-accounting/economics/" tabindex="-1">Economics</a>
+<a data-id="540" class="js-side-nav-cat js-subcat" href="/courses/finance-and-accounting/finance-management/" tabindex="-1">Finance</a>
+<a data-id="542" class="js-side-nav-cat js-subcat" href="/courses/finance-and-accounting/finance-certification-and-exam-prep/" tabindex="-1">Finance Cert &amp; Exam Prep</a>
+<a data-id="544" class="js-side-nav-cat js-subcat" href="/courses/finance-and-accounting/financial-modeling-and-analysis/" tabindex="-1">Financial Modeling &amp; Analysis</a>
+<a data-id="546" class="js-side-nav-cat js-subcat" href="/courses/finance-and-accounting/investing-and-trading/" tabindex="-1">Investing &amp; Trading</a>
+<a data-id="548" class="js-side-nav-cat js-subcat" href="/courses/finance-and-accounting/money-management-tools/" tabindex="-1">Money Management Tools</a>
+<a data-id="550" class="js-side-nav-cat js-subcat" href="/courses/finance-and-accounting/taxes/" tabindex="-1">Taxes</a>
+<a data-id="552" class="js-side-nav-cat js-subcat" href="/courses/finance-and-accounting/other-finance-and-accounting/" tabindex="-1">Other Finance &amp; Accounting</a>
+</div>
+<a data-id="294" class="js-side-nav-cat" href="/courses/it-and-software/" tabindex="-1">IT &amp; Software</a>
+<div>
+<a data-id="132" class="js-side-nav-cat js-subcat" href="/courses/it-and-software/it-certification/" tabindex="-1">IT Certifications</a>
+<a data-id="134" class="js-side-nav-cat js-subcat" href="/courses/it-and-software/network-and-security/" tabindex="-1">Network &amp; Security</a>
+<a data-id="136" class="js-side-nav-cat js-subcat" href="/courses/it-and-software/hardware/" tabindex="-1">Hardware</a>
+<a data-id="138" class="js-side-nav-cat js-subcat" href="/courses/it-and-software/operating-systems/" tabindex="-1">Operating Systems &amp; Servers</a>
+<a data-id="140" class="js-side-nav-cat js-subcat" href="/courses/it-and-software/other-it-and-software/" tabindex="-1">Other IT &amp; Software</a>
+</div>
+<a data-id="292" class="js-side-nav-cat" href="/courses/office-productivity/" tabindex="-1">Office Productivity</a>
+<div>
+<a data-id="96" class="js-side-nav-cat js-subcat" href="/courses/office-productivity/microsoft/" tabindex="-1">Microsoft</a>
+<a data-id="98" class="js-side-nav-cat js-subcat" href="/courses/office-productivity/apple/" tabindex="-1">Apple</a>
+<a data-id="100" class="js-side-nav-cat js-subcat" href="/courses/office-productivity/google/" tabindex="-1">Google</a>
+<a data-id="102" class="js-side-nav-cat js-subcat" href="/courses/office-productivity/sap/" tabindex="-1">SAP</a>
+<a data-id="106" class="js-side-nav-cat js-subcat" href="/courses/office-productivity/oracle/" tabindex="-1">Oracle</a>
+<a data-id="108" class="js-side-nav-cat js-subcat" href="/courses/office-productivity/other-productivity/" tabindex="-1">Other Office Productivity</a>
+</div>
+<a data-id="296" class="js-side-nav-cat" href="/courses/personal-development/" tabindex="-1">Personal Development</a>
+<div>
+<a data-id="142" class="js-side-nav-cat js-subcat" href="/courses/personal-development/personal-transformation/" tabindex="-1">Personal Transformation</a>
+<a data-id="144" class="js-side-nav-cat js-subcat" href="/courses/personal-development/productivity/" tabindex="-1">Personal Productivity</a>
+<a data-id="146" class="js-side-nav-cat js-subcat" href="/courses/personal-development/leadership/" tabindex="-1">Leadership</a>
+<a data-id="150" class="js-side-nav-cat js-subcat" href="/courses/personal-development/career-development/" tabindex="-1">Career Development</a>
+<a data-id="152" class="js-side-nav-cat js-subcat" href="/courses/personal-development/parenting-and-relationships/" tabindex="-1">Parenting &amp; Relationships</a>
+<a data-id="156" class="js-side-nav-cat js-subcat" href="/courses/personal-development/happiness/" tabindex="-1">Happiness</a>
+<a data-id="577" class="js-side-nav-cat js-subcat" href="/courses/lifestyle/esoteric-practices/" tabindex="-1">Esoteric Practices</a>
+<a data-id="158" class="js-side-nav-cat js-subcat" href="/courses/personal-development/religion-and-spirituality/" tabindex="-1">Religion &amp; Spirituality</a>
+<a data-id="160" class="js-side-nav-cat js-subcat" href="/courses/personal-development/personal-brand-building/" tabindex="-1">Personal Brand Building</a>
+<a data-id="164" class="js-side-nav-cat js-subcat" href="/courses/personal-development/creativity/" tabindex="-1">Creativity</a>
+<a data-id="166" class="js-side-nav-cat js-subcat" href="/courses/personal-development/influence/" tabindex="-1">Influence</a>
+<a data-id="168" class="js-side-nav-cat js-subcat" href="/courses/personal-development/self-esteem-and-confidence/" tabindex="-1">Self Esteem &amp; Confidence</a>
+<a data-id="170" class="js-side-nav-cat js-subcat" href="/courses/personal-development/stress-management/" tabindex="-1">Stress Management</a>
+<a data-id="172" class="js-side-nav-cat js-subcat" href="/courses/personal-development/memory/" tabindex="-1">Memory &amp; Study Skills</a>
+<a data-id="176" class="js-side-nav-cat js-subcat" href="/courses/personal-development/motivation/" tabindex="-1">Motivation</a>
+<a data-id="178" class="js-side-nav-cat js-subcat" href="/courses/personal-development/other-personal-development/" tabindex="-1">Other Personal Development</a>
+</div>
+<a data-id="269" class="js-side-nav-cat" href="/courses/design/" tabindex="-1">Design</a>
+<div>
+<a data-id="6" class="js-side-nav-cat js-subcat" href="/courses/design/web-design/" tabindex="-1">Web Design</a>
+<a data-id="110" class="js-side-nav-cat js-subcat" href="/courses/design/graphic-design-and-illustration/" tabindex="-1">Graphic Design &amp; Illustration</a>
+<a data-id="112" class="js-side-nav-cat js-subcat" href="/courses/design/design-tools/" tabindex="-1">Design Tools</a>
+<a data-id="114" class="js-side-nav-cat js-subcat" href="/courses/design/user-experience/" tabindex="-1">User Experience Design</a>
+<a data-id="116" class="js-side-nav-cat js-subcat" href="/courses/design/game-design/" tabindex="-1">Game Design</a>
+<a data-id="120" class="js-side-nav-cat js-subcat" href="/courses/design/3d-and-animation/" tabindex="-1">3D &amp; Animation</a>
+<a data-id="122" class="js-side-nav-cat js-subcat" href="/courses/design/fashion/" tabindex="-1">Fashion Design</a>
+<a data-id="124" class="js-side-nav-cat js-subcat" href="/courses/design/architectural-design/" tabindex="-1">Architectural Design</a>
+<a data-id="128" class="js-side-nav-cat js-subcat" href="/courses/design/interior-design/" tabindex="-1">Interior Design</a>
+<a data-id="130" class="js-side-nav-cat js-subcat" href="/courses/design/other-design/" tabindex="-1">Other Design</a>
+</div>
+<a data-id="290" class="js-side-nav-cat" href="/courses/marketing/" tabindex="-1">Marketing</a>
+<div>
+<a data-id="62" class="js-side-nav-cat js-subcat" href="/courses/marketing/digital-marketing/" tabindex="-1">Digital Marketing</a>
+<a data-id="64" class="js-side-nav-cat js-subcat" href="/courses/marketing/search-engine-optimization/" tabindex="-1">Search Engine Optimization</a>
+<a data-id="66" class="js-side-nav-cat js-subcat" href="/courses/marketing/social-media-marketing/" tabindex="-1">Social Media Marketing</a>
+<a data-id="68" class="js-side-nav-cat js-subcat" href="/courses/marketing/branding/" tabindex="-1">Branding</a>
+<a data-id="70" class="js-side-nav-cat js-subcat" href="/courses/marketing/marketing-fundamentals/" tabindex="-1">Marketing Fundamentals</a>
+<a data-id="72" class="js-side-nav-cat js-subcat" href="/courses/marketing/analytics-and-automation/" tabindex="-1">Marketing Analytics &amp; Automation</a>
+<a data-id="74" class="js-side-nav-cat js-subcat" href="/courses/marketing/public-relations/" tabindex="-1">Public Relations</a>
+<a data-id="76" class="js-side-nav-cat js-subcat" href="/courses/marketing/advertising/" tabindex="-1">Paid Advertising</a>
+<a data-id="78" class="js-side-nav-cat js-subcat" href="/courses/marketing/video-and-mobile-marketing/" tabindex="-1">Video &amp; Mobile Marketing</a>
+<a data-id="80" class="js-side-nav-cat js-subcat" href="/courses/marketing/content-marketing/" tabindex="-1">Content Marketing</a>
+<a data-id="86" class="js-side-nav-cat js-subcat" href="/courses/marketing/growth-hacking/" tabindex="-1">Growth Hacking</a>
+<a data-id="88" class="js-side-nav-cat js-subcat" href="/courses/marketing/affiliate-marketing/" tabindex="-1">Affiliate Marketing</a>
+<a data-id="90" class="js-side-nav-cat js-subcat" href="/courses/marketing/product-marketing/" tabindex="-1">Product Marketing</a>
+<a data-id="94" class="js-side-nav-cat js-subcat" href="/courses/marketing/other-marketing/" tabindex="-1">Other Marketing</a>
+</div>
+<a data-id="274" class="js-side-nav-cat" href="/courses/lifestyle/" tabindex="-1">Lifestyle</a>
+<div>
+<a data-id="180" class="js-side-nav-cat js-subcat" href="/courses/lifestyle/arts-and-crafts/" tabindex="-1">Arts &amp; Crafts</a>
+<a data-id="184" class="js-side-nav-cat js-subcat" href="/courses/lifestyle/beauty-and-makeup/" tabindex="-1">Beauty &amp; Makeup</a>
+<a data-id="577" class="js-side-nav-cat js-subcat" href="/courses/lifestyle/esoteric-practices/" tabindex="-1">Esoteric Practices</a>
+<a data-id="182" class="js-side-nav-cat js-subcat" href="/courses/lifestyle/food-and-beverage/" tabindex="-1">Food &amp; Beverage</a>
+<a data-id="188" class="js-side-nav-cat js-subcat" href="/courses/lifestyle/gaming/" tabindex="-1">Gaming</a>
+<a data-id="190" class="js-side-nav-cat js-subcat" href="/courses/lifestyle/home-improvement/" tabindex="-1">Home Improvement &amp; Gardening</a>
+<a data-id="192" class="js-side-nav-cat js-subcat" href="/courses/lifestyle/pet-care-and-training/" tabindex="-1">Pet Care &amp; Training</a>
+<a data-id="186" class="js-side-nav-cat js-subcat" href="/courses/lifestyle/travel/" tabindex="-1">Travel</a>
+<a data-id="194" class="js-side-nav-cat js-subcat" href="/courses/lifestyle/other-lifestyle/" tabindex="-1">Other Lifestyle</a>
+</div>
+<a data-id="273" class="js-side-nav-cat" href="/courses/photography-and-video/" tabindex="-1">Photography &amp; Video</a>
+<div>
+<a data-id="370" class="js-side-nav-cat js-subcat" href="/courses/photography-and-video/digital-photography/" tabindex="-1">Digital Photography</a>
+<a data-id="196" class="js-side-nav-cat js-subcat" href="/courses/photography-and-video/photography-fundamentals/" tabindex="-1">Photography</a>
+<a data-id="204" class="js-side-nav-cat js-subcat" href="/courses/photography-and-video/portraits/" tabindex="-1">Portrait Photography</a>
+<a data-id="198" class="js-side-nav-cat js-subcat" href="/courses/photography-and-video/photography-tools/" tabindex="-1">Photography Tools</a>
+<a data-id="208" class="js-side-nav-cat js-subcat" href="/courses/photography-and-video/commercial-photography/" tabindex="-1">Commercial Photography</a>
+<a data-id="218" class="js-side-nav-cat js-subcat" href="/courses/photography-and-video/video-design/" tabindex="-1">Video Design</a>
+<a data-id="220" class="js-side-nav-cat js-subcat" href="/courses/photography-and-video/other-photography-and-video/" tabindex="-1">Other Photography &amp; Video</a>
+</div>
+<a data-id="276" class="js-side-nav-cat" href="/courses/health-and-fitness/" tabindex="-1">Health &amp; Fitness</a>
+<div>
+<a data-id="222" class="js-side-nav-cat js-subcat" href="/courses/health-and-fitness/fitness/" tabindex="-1">Fitness</a>
+<a data-id="224" class="js-side-nav-cat js-subcat" href="/courses/health-and-fitness/general-health/" tabindex="-1">General Health</a>
+<a data-id="226" class="js-side-nav-cat js-subcat" href="/courses/health-and-fitness/sports/" tabindex="-1">Sports</a>
+<a data-id="228" class="js-side-nav-cat js-subcat" href="/courses/health-and-fitness/nutrition/" tabindex="-1">Nutrition &amp; Diet</a>
+<a data-id="230" class="js-side-nav-cat js-subcat" href="/courses/health-and-fitness/yoga/" tabindex="-1">Yoga</a>
+<a data-id="232" class="js-side-nav-cat js-subcat" href="/courses/health-and-fitness/mental-health/" tabindex="-1">Mental Health</a>
+<a data-id="236" class="js-side-nav-cat js-subcat" href="/courses/health-and-fitness/self-defense/" tabindex="-1">Martial Arts &amp; Self Defense</a>
+<a data-id="238" class="js-side-nav-cat js-subcat" href="/courses/health-and-fitness/safety-and-first-aid/" tabindex="-1">Safety &amp; First Aid</a>
+<a data-id="240" class="js-side-nav-cat js-subcat" href="/courses/health-and-fitness/dance/" tabindex="-1">Dance</a>
+<a data-id="242" class="js-side-nav-cat js-subcat" href="/courses/health-and-fitness/meditation/" tabindex="-1">Meditation</a>
+<a data-id="244" class="js-side-nav-cat js-subcat" href="/courses/health-and-fitness/other-health-and-fitness/" tabindex="-1">Other Health &amp; Fitness</a>
+</div>
+<a data-id="278" class="js-side-nav-cat" href="/courses/music/" tabindex="-1">Music</a>
+<div>
+<a data-id="296" class="js-side-nav-cat js-subcat" href="/courses/music/instruments/" tabindex="-1">Instruments</a>
+<a data-id="298" class="js-side-nav-cat js-subcat" href="/courses/music/production/" tabindex="-1">Music Production</a>
+<a data-id="300" class="js-side-nav-cat js-subcat" href="/courses/music/music-fundamentals/" tabindex="-1">Music Fundamentals</a>
+<a data-id="302" class="js-side-nav-cat js-subcat" href="/courses/music/vocal/" tabindex="-1">Vocal</a>
+<a data-id="304" class="js-side-nav-cat js-subcat" href="/courses/music/music-techniques/" tabindex="-1">Music Techniques</a>
+<a data-id="306" class="js-side-nav-cat js-subcat" href="/courses/music/music-software/" tabindex="-1">Music Software</a>
+<a data-id="308" class="js-side-nav-cat js-subcat" href="/courses/music/other-music/" tabindex="-1">Other Music</a>
+</div>
+<a data-id="300" class="js-side-nav-cat" href="/courses/teaching-and-academics/" tabindex="-1">Teaching &amp; Academics</a>
+<div>
+<a data-id="366" class="js-side-nav-cat js-subcat" href="/courses/teaching-and-academics/engineering/" tabindex="-1">Engineering</a>
+<a data-id="380" class="js-side-nav-cat js-subcat" href="/courses/teaching-and-academics/humanities/" tabindex="-1">Humanities</a>
+<a data-id="310" class="js-side-nav-cat js-subcat" href="/courses/teaching-and-academics/math/" tabindex="-1">Math</a>
+<a data-id="312" class="js-side-nav-cat js-subcat" href="/courses/teaching-and-academics/science/" tabindex="-1">Science</a>
+<a data-id="523" class="js-side-nav-cat js-subcat" href="/courses/teaching-and-academics/online-education/" tabindex="-1">Online Education</a>
+<a data-id="376" class="js-side-nav-cat js-subcat" href="/courses/teaching-and-academics/social-science/" tabindex="-1">Social Science</a>
+<a data-id="521" class="js-side-nav-cat js-subcat" href="/courses/teaching-and-academics/language/" tabindex="-1">Language Learning</a>
+<a data-id="527" class="js-side-nav-cat js-subcat" href="/courses/teaching-and-academics/teacher-training/" tabindex="-1">Teacher Training</a>
+<a data-id="529" class="js-side-nav-cat js-subcat" href="/courses/teaching-and-academics/test-prep/" tabindex="-1">Test Prep</a>
+<a data-id="525" class="js-side-nav-cat js-subcat" href="/courses/teaching-and-academics/other-teaching-academics/" tabindex="-1">Other Teaching &amp; Academics</a>
+</div>
+<div data-id="8" class="js-side-nav-popular-topics">
+<a data-id="8322" href="/topic/web-development/" tabindex="-1">Web Development</a>
+<a data-id="6368" href="/topic/javascript/" tabindex="-1">JavaScript</a>
+<a data-id="7450" href="/topic/react/" tabindex="-1">React JS</a>
+<a data-id="28016" href="/topic/angular/" tabindex="-1">Angular</a>
+<a data-id="57548" href="/topic/nextjs-p/" tabindex="-1">Next.js</a>
+<a data-id="5306" href="/topic/css/" tabindex="-1">CSS</a>
+<a data-id="6148" href="/topic/html/" tabindex="-1">HTML</a>
+<a data-id="10230" href="/topic/aspnet-core/" tabindex="-1">ASP.NET Core</a>
+<a data-id="6928" href="/topic/nodejs/" tabindex="-1">Node.Js</a>
+</div>
+<div data-id="132" class="js-side-nav-popular-topics">
+<a data-id="46868" href="/topic/aws-certified-cloud-practitioner/" tabindex="-1">AWS Certified Cloud Practitioner</a>
+<a data-id="24774" href="/topic/aws-certified-solutions-architect-associate/" tabindex="-1">AWS Certified Solutions Architect - Associate</a>
+<a data-id="5176" href="/topic/comptia-security/" tabindex="-1">CompTIA Security+</a>
+<a data-id="5166" href="/topic/comptia-a/" tabindex="-1">CompTIA A+</a>
+<a data-id="4452" href="/topic/amazon-aws/" tabindex="-1">Amazon AWS</a>
+<a data-id="5044" href="/topic/cisco-ccna/" tabindex="-1">Cisco Certified Network Associate (CCNA)</a>
+<a data-id="43860" href="/topic/aws-certified-developer-associate/" tabindex="-1">AWS Certified Developer - Associate</a>
+<a data-id="118634" href="/topic/microsoft-az-900/" tabindex="-1">AZ-900: Microsoft Azure Fundamentals</a>
+<a data-id="6238" href="/topic/information-security/" tabindex="-1">Information Security</a>
+</div>
+<div data-id="44" class="js-side-nav-popular-topics">
+<a data-id="6740" href="/topic/microsoft-power-bi/" tabindex="-1">Microsoft Power BI</a>
+<a data-id="7862" href="/topic/sql/" tabindex="-1">SQL</a>
+<a data-id="5334" href="/topic/data-modeling/" tabindex="-1">Data Modeling</a>
+<a data-id="5328" href="/topic/data-analysis/" tabindex="-1">Data Analysis</a>
+<a data-id="9000" href="/topic/business-analysis/" tabindex="-1">Business Analysis</a>
+<a data-id="7978" href="/topic/tableau/" tabindex="-1">Tableau</a>
+<a data-id="6730" href="/topic/excel/" tabindex="-1">Excel</a>
+<a data-id="29362" href="/topic/dax/" tabindex="-1">Data Analysis Expressions (DAX)</a>
+<a data-id="4886" href="/topic/business-intelligence/" tabindex="-1">Business Intelligence</a>
+</div>
+<div data-id="14" class="js-side-nav-popular-topics">
+<a data-id="8166" href="/topic/unreal-engine/" tabindex="-1">Unreal Engine</a>
+<a data-id="8154" href="/topic/unity/" tabindex="-1">Unity</a>
+<a data-id="5904" href="/topic/game-development/" tabindex="-1">Game Development Fundamentals</a>
+<a data-id="36020" href="/topic/godot/" tabindex="-1">Godot</a>
+<a data-id="4904" href="/topic/c-sharp/" tabindex="-1">C# (programming language)</a>
+<a data-id="4280" href="/topic/3d-game-development/" tabindex="-1">3D Game Development</a>
+<a data-id="4908" href="/topic/c-plus-plus/" tabindex="-1">C++ (programming language)</a>
+<a data-id="25642" href="/topic/2d-game-development/" tabindex="-1">2D Game Development</a>
+<a data-id="109866" href="/topic/unreal-engine-blueprints/" tabindex="-1">Unreal Engine Blueprints</a>
+</div>
+<div data-id="10" class="js-side-nav-popular-topics">
+<a data-id="52458" href="/topic/google-flutter/" tabindex="-1">Google Flutter</a>
+<a data-id="4470" href="/topic/android-development/" tabindex="-1">Android Development</a>
+<a data-id="6292" href="/topic/ios-development/" tabindex="-1">iOS Development</a>
+<a data-id="9884" href="/topic/react-native/" tabindex="-1">React Native</a>
+<a data-id="37860" href="/topic/dart-programming-language/" tabindex="-1">Dart (programming language)</a>
+<a data-id="7956" href="/topic/swift/" tabindex="-1">Swift</a>
+<a data-id="13554" href="/topic/kotlin/" tabindex="-1">Kotlin</a>
+<a data-id="5402" href="/topic/mobile-development/" tabindex="-1">Mobile App Development</a>
+<a data-id="131074" href="/topic/swiftui/" tabindex="-1">SwiftUI</a>
+</div>
+<div data-id="24" class="js-side-nav-popular-topics">
+<a data-id="7898" href="/topic/stock-options/" tabindex="-1">Stock Options</a>
+<a data-id="4328" href="/topic/accounting/" tabindex="-1">Accounting</a>
+<a data-id="35138" href="/topic/fintech/" tabindex="-1">Fintech</a>
+<a data-id="5868" href="/topic/forex/" tabindex="-1">Forex Trading</a>
+</div>
+<div data-id="110" class="js-side-nav-popular-topics">
+<a data-id="6020" href="/topic/graphic-design/" tabindex="-1">Graphic Design</a>
+<a data-id="4394" href="/topic/adobe-illustrator/" tabindex="-1">Adobe Illustrator</a>
+<a data-id="4402" href="/topic/photoshop/" tabindex="-1">Adobe Photoshop</a>
+<a data-id="5494" href="/topic/drawing/" tabindex="-1">Drawing</a>
+<a data-id="8592" href="/topic/canva/" tabindex="-1">Canva</a>
+<a data-id="4396" href="/topic/indesign/" tabindex="-1">Adobe InDesign</a>
+<a data-id="48410" href="/topic/procreate-ipad-app/" tabindex="-1">Procreate Digital Illustration App</a>
+<a data-id="5434" href="/topic/digital-painting/" tabindex="-1">Digital Painting</a>
+<a data-id="33938" href="/topic/design-theory/" tabindex="-1">Design Theory</a>
+</div>
+<div data-id="142" class="js-side-nav-popular-topics">
+<a data-id="10684" href="/topic/life-coaching/" tabindex="-1">Life Coach Training</a>
+<a data-id="6910" href="/topic/neuro-linguistic-programming/" tabindex="-1">Neuro-Linguistic Programming</a>
+<a data-id="15374" href="/topic/personal-transformation/" tabindex="-1">Personal Transformation</a>
+<a data-id="7138" href="/topic/personal-development/" tabindex="-1">Personal Development</a>
+<a data-id="23948" href="/topic/sound-therapy/" tabindex="-1">Sound Therapy</a>
+<a data-id="6770" href="/topic/mindfulness/" tabindex="-1">Mindfulness</a>
+<a data-id="5604" href="/topic/emotional-intelligence/" tabindex="-1">Emotional Intelligence</a>
+<a data-id="5124" href="/topic/cbt/" tabindex="-1">Cognitive Behavioral Therapy (CBT)</a>
+<a data-id="6520" href="/topic/life-purpose/" tabindex="-1">Life Purpose</a>
+</div>
+<div data-id="26" class="js-side-nav-popular-topics">
+<a data-id="4882" href="/topic/business-fundamentals/" tabindex="-1">Business Fundamentals</a>
+<a data-id="5654" href="/topic/entrepreneurship/" tabindex="-1">Entrepreneurship Fundamentals</a>
+<a data-id="5874" href="/topic/freelancing/" tabindex="-1">Freelancing</a>
+<a data-id="6992" href="/topic/online-business/" tabindex="-1">Online Business</a>
+<a data-id="4898" href="/topic/business-strategy/" tabindex="-1">Business Strategy</a>
+<a data-id="158002" href="/topic/chatgpt/" tabindex="-1">ChatGPT</a>
+<a data-id="7888" href="/topic/startup/" tabindex="-1">Startup</a>
+<a data-id="4894" href="/topic/business-plan/" tabindex="-1">Business Plan</a>
+<a data-id="6252" href="/topic/instagram-marketing/" tabindex="-1">Instagram Marketing</a>
+</div>
+<div data-id="62" class="js-side-nav-popular-topics">
+<a data-id="5430" href="/topic/digital-marketing/" tabindex="-1">Digital Marketing</a>
+<a data-id="7788" href="/topic/social-media-marketing/" tabindex="-1">Social Media Marketing</a>
+<a data-id="6630" href="/topic/marketing-strategy/" tabindex="-1">Marketing Strategy</a>
+<a data-id="6994" href="/topic/internet-marketing/" tabindex="-1">Internet Marketing</a>
+<a data-id="158002" href="/topic/chatgpt/" tabindex="-1">ChatGPT</a>
+<a data-id="5242" href="/topic/copywriting/" tabindex="-1">Copywriting</a>
+<a data-id="5980" href="/topic/google-analytics/" tabindex="-1">Google Analytics</a>
+<a data-id="7558" href="/topic/sales-funnel/" tabindex="-1">Sales Funnel</a>
+<a data-id="7888" href="/topic/startup/" tabindex="-1">Startup</a>
+</div>
+</nav>
+<div class="ud-main-content">
+<div class="ud-app-loader ud-component--search--search" data-module-id="search" data-module-args="{&quot;subsCollectionIds&quot;:null,&quot;showSRPRefundNotice&quot;:false,&quot;showUserEnrollmentProgress&quot;:false,&quot;showCodingExerciseCount&quot;:false,&quot;enableLabsInPersonalPlan&quot;:false,&quot;subscriptionCatalogDifferentiatorFeature&quot;:{&quot;showTopPickBadge&quot;:false,&quot;showIncludedInPlansBadge&quot;:false,&quot;showPremiumBadge&quot;:false},&quot;enableLectureRecoForBottomDrawerOnSRP&quot;:false,&quot;enableInLectureSearchSegments&quot;:false,&quot;enableLearnerGoalCollection&quot;:false,&quot;enableUpdatedLabsUnitOnUBProSRP&quot;:false,&quot;enablePathsTabOnUBSRP&quot;:false,&quot;canUserAccessUBProFeatures&quot;:false}"></div>
+</div>
+<div class="ud-app-loader ud-component--footer--footer-container ud-footer-container" data-module-id="common/mobile" data-module-args="{&quot;hideFooterUntilContentReady&quot;:true,&quot;currentLocaleId&quot;:&quot;en_US&quot;,&quot;linkColumns&quot;:[[{&quot;feature_flag&quot;:&quot;footer.links.about&quot;,&quot;href&quot;:&quot;https://about.udemy.com/?locale=en-us&quot;,&quot;text&quot;:&quot;About us&quot;},{&quot;feature_flag&quot;:&quot;footer.links.contact&quot;,&quot;href&quot;:&quot;https://about.udemy.com/company?locale=en-us#offices&quot;,&quot;text&quot;:&quot;Contact us&quot;},{&quot;feature_flag&quot;:&quot;footer.links.careers&quot;,&quot;href&quot;:&quot;https://about.udemy.com/careers?locale=en-us&quot;,&quot;text&quot;:&quot;Careers&quot;},{&quot;is_disabled&quot;:false,&quot;href&quot;:&quot;https://investors.udemy.com&quot;,&quot;text&quot;:&quot;Investors&quot;},{&quot;is_disabled&quot;:false,&quot;href&quot;:&quot;/terms/&quot;,&quot;text&quot;:&quot;Terms&quot;},{&quot;style&quot;:{&quot;display&quot;:&quot;none&quot;},&quot;data_purpose&quot;:&quot;footer-imprint-contact&quot;,&quot;href&quot;:&quot;/terms/imprint-contact/&quot;,&quot;text&quot;:&quot;Impressum Kontakt&quot;},{&quot;href&quot;:&quot;/terms/privacy/&quot;,&quot;text&quot;:&quot;Privacy policy&quot;},{&quot;data_purpose&quot;:&quot;footer.links.cookie_preferences&quot;,&quot;style&quot;:{&quot;display&quot;:&quot;none&quot;},&quot;text&quot;:&quot;Cookie settings&quot;,&quot;text_us_mx&quot;:&quot;Do not sell or share my personal information&quot;},{&quot;feature_flag&quot;:&quot;footer.links.blog&quot;,&quot;href&quot;:&quot;https://blog.udemy.com/?ref=footer&quot;,&quot;text&quot;:&quot;Blog&quot;},{&quot;href&quot;:&quot;/sitemap/&quot;,&quot;text&quot;:&quot;Sitemap&quot;},{&quot;is_disabled&quot;:false,&quot;href&quot;:&quot;/mobile/&quot;,&quot;open_in_new_tab&quot;:true,&quot;text&quot;:&quot;Get the app&quot;},{&quot;href&quot;:&quot;https://about.udemy.com/accessibility-statement?locale=en-us&quot;,&quot;text&quot;:&quot;Accessibility statement&quot;}]],&quot;isJpFooter&quot;:false,&quot;ufbNotice&quot;:{&quot;link&quot;:&quot;/udemy-business/?locale=en_US\u0026path=request-demo-mx%2F\u0026ref=footer-ad&quot;,&quot;placement&quot;:&quot;footer-ad&quot;,&quot;isOnsiteRequestDemo&quot;:false}}" data-module-priority="-10"><div data-unique-id="74" style="display:none"></div><footer class="ud-footer ud-footer-initially-hidden" data-purpose="footer"><div class="footer-section ufb-notice-module--notice-row--LgC7t" data-testid="ufb-notice"><div class="ud-heading-lg ufb-notice-module--notice--NOcJY"><span>Top companies choose <a data-purpose="ufb-link" class="inverted-link" href="/udemy-business/?locale=en_US&amp;path=request-demo-mx%2F&amp;ref=footer-ad" target="_blank" rel="noopener">Udemy Business</a> to build in-demand career skills.</span></div><div class="ufb-notice-module--partner-logos--vHIWo"><img src="https://s.udemycdn.com/partner-logos/v4/nasdaq-light.svg" alt="Nasdaq" height="44" width="115" loading="lazy" /><img src="https://s.udemycdn.com/partner-logos/v4/volkswagen-light.svg" alt="Volkswagen" height="44" width="44" loading="lazy" /><img src="https://s.udemycdn.com/partner-logos/v4/box-light.svg" alt="Box" height="44" width="67" loading="lazy" /><img src="https://s.udemycdn.com/partner-logos/v4/netapp-light.svg" alt="NetApp" height="44" width="115" loading="lazy" /><img src="https://s.udemycdn.com/partner-logos/v4/eventbrite-light.svg" alt="Eventbrite" height="44" width="115" loading="lazy" /></div></div><div class="footer-section footer-section-main"><div class="links-and-language-selector"><div class="language-selector-container"><button type="button" class="ud-btn ud-btn-medium ud-btn-secondary ud-text-md language-selector-button-module--button--iLcUV" data-testid="language-selector-button"><svg aria-hidden="true" focusable="false" class="ud-icon ud-icon-small ud-icon-color-neutral"><use xlink:href="#icon-language"></use></svg><span>English</span></button></div><ul class="ud-unstyled-list link-column"><li><a class="link white-link ud-text-sm" href="https://about.udemy.com/?locale=en-us">About us</a></li><li><a class="link white-link ud-text-sm" href="https://about.udemy.com/company?locale=en-us#offices">Contact us</a></li><li><a class="link white-link ud-text-sm" href="https://about.udemy.com/careers?locale=en-us">Careers</a></li><li><a class="link white-link ud-text-sm" href="https://investors.udemy.com">Investors</a></li><li><a class="link white-link ud-text-sm" href="/terms/">Terms</a></li><li><a class="link white-link ud-text-sm" href="/terms/privacy/">Privacy policy</a></li><li><a class="link white-link ud-text-sm" href="https://blog.udemy.com/?ref=footer">Blog</a></li><li><a class="link white-link ud-text-sm" href="/sitemap/">Sitemap</a></li><li><a class="link white-link ud-text-sm" href="/mobile/" target="_blank" rel="noopener noreferrer">Get the app</a></li><li><a class="link white-link ud-text-sm" href="https://about.udemy.com/accessibility-statement?locale=en-us">Accessibility statement</a></li></ul></div><div class="logo-and-copyright"><div class="logo-container" data-testid="logo-container"><a href="/" class="ud-btn ud-btn-large ud-btn-link ud-heading-md"><img src="/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="Udemy" width="91.07142857142857" height="34" loading="eager" /></a></div><div class="copyright-container ud-text-xs">© 2024 Udemy, Inc.</div></div></div></footer></div>
+</div>
+<div class="ud-app-loader ud-component--ui-feedback--ui-feedback" data-module-id="common/mobile" data-module-args="{&quot;uiMessages&quot;:[]}" data-module-priority="-10"></div>
+<script nonce="wTwLuVf7S3kBSXdZDbtNRdM3ZLDexYrR5WAheeuAJW8=" type="text/javascript" src="/staticx/udemy/js/webpack/entry-main-manifest.45770d8dda43a7a32f4e.js" defer></script>
+<script nonce="wTwLuVf7S3kBSXdZDbtNRdM3ZLDexYrR5WAheeuAJW8=" type="text/javascript" src="/staticx/udemy/js/webpack/entry-main-vendor.43df599d869f2cffa476.js" defer></script>
+<script nonce="wTwLuVf7S3kBSXdZDbtNRdM3ZLDexYrR5WAheeuAJW8=" type="text/javascript" src="/staticx/udemy/js/webpack/jsi18n-en-us-discovery-core.53c6def2cd33fe32d8cc.js" defer></script>
+<script nonce="wTwLuVf7S3kBSXdZDbtNRdM3ZLDexYrR5WAheeuAJW8=" type="text/javascript" src="/staticx/udemy/js/webpack/entry-main.3dcf6cfc4e5506fabe7b.js" defer></script>
+<script nonce="wTwLuVf7S3kBSXdZDbtNRdM3ZLDexYrR5WAheeuAJW8=">
+    window.handleCSSToggleButtonClick = function (event) {
+        var target = event.currentTarget;
+        var cssToggleId = target && target.dataset && target.dataset.cssToggleId;
+        var input = cssToggleId && document.getElementById(cssToggleId);
+        if (input) {
+            if (input.dataset.type === 'checkbox') {
+                input.dataset.checked = input.dataset.checked ? '' : 'checked';
+            } else {
+                input.dataset.checked = input.dataset.allowToggle && input.dataset.checked ? '' : 'checked';
+                var radios = document.querySelectorAll('[name="' + input.dataset.name + '"]');
+                for (var i = 0; i < radios.length; i++) {
+                    if (radios[i] !== input) {
+                        radios[i].dataset.checked = '';
+                    }
+                }
+            }
+        }
+    };
+    (function () {
+        var cssToggleButtons = document.querySelectorAll('[data-css-toggle-id');
+        for (var i = 0; i < cssToggleButtons.length; i++) {
+            cssToggleButtons[i].addEventListener('click', window.handleCSSToggleButtonClick);
+        }
+    })();
+</script>
+<div class="ud-app-loader ud-component--event-tracking--tracker-initializer" data-module-id="common/mobile" data-module-priority="-10"></div>
+<script>(function(){if (!document.body) return;var js = "window['__CF$cv$params']={r:'87b5c35d68584d63',t:'MTcxNDI5Mzc5MC42OTAwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>
