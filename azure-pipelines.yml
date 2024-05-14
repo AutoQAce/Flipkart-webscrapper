@@ -14,14 +14,13 @@ variables:
   webAppName: 'flipkartwrapper'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  vmImageName: ''
 
   # Environment name
   environmentName: 'flipkartwrapper'
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
-
   # Python version: 3.10
   pythonVersion: '3.10'
 
@@ -31,6 +30,7 @@ stages:
   jobs:
   - job: BuildJob
     pool:
+      name: my-personal-computer-pipeline
       vmImage: $(vmImageName)
     steps:
     - task: UsePythonVersion@0
