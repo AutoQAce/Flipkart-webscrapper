@@ -12,7 +12,7 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium import  webdriver
 
 app=Flask(__name__)
-
+logging.basicConfig(filename="scrapper.log", level=logging.INFO)
 
 @app.route("/",methods=['GET'])
 def homepage():
@@ -20,7 +20,6 @@ def homepage():
 
 @app.route("/review",methods=['POST','GET'])
 def index():
-    logging.basicConfig(filename="scrapper.log", level=logging.INFO)
     options = webdriver.ChromeOptions()
     options.add_argument("--headless=new")
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
