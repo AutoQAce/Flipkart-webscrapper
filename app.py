@@ -1,6 +1,9 @@
 import time
 import logging
 from flask import Flask,render_template,request,jsonify
+import azure.functions as func
+
+
 from flask_cors import CORS,cross_origin
 
 from pymongo.mongo_client import MongoClient
@@ -21,7 +24,9 @@ def homepage():
 @app.route("/review",methods=['POST','GET'])
 def index():
     options = webdriver.ChromeOptions()
-    options.add_argument("--headless=new")
+    options.add_argument("--headless")
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
     if request.method=='POST':
         searchString="+".join(request.form['content'].split())
@@ -60,7 +65,7 @@ def index():
                     mydict={"ProductName":productname,"CustomerName":name,"Rating":rating,"CommentHeader":ratingHead,"Comment":comment}
                     reviews.append(mydict)
                 logging.info(f"logging my final dict result as {reviews}")
-                uri="mongodb+srv://admin:admin@cluster0.qm6mxz1.mongodb.net/?retryWrites=true&w=majority&appName = Cluster0"
+                uri="mongodb+srv://admin:admin@cluster0.qm6mxz1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
                 # Create a new client and connect to the server
                 client = MongoClient(uri, server_api=ServerApi('1'))
                 # Send a ping to confirm a successful connection
@@ -79,9 +84,15 @@ def index():
         else:
             return render_template("index.html")
 
+def get_chrome_driver():
+    logging.info("Initializing Chrome Driver...!!!")
+    try:
+        logging.info("ChromeDriver initialized successfully...")
+    except:
+        logging.error("Some error occured whille initialzing chrome driver")
 
 if __name__=="__main__":
-    app.run(host="0.0.0.0")
+    app.run(host="0.0.0.0", debug=True)
 
 
 
