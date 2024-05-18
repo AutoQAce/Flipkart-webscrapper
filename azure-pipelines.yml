@@ -30,7 +30,6 @@ stages:
   jobs:
   - job: BuildJob
     pool:
-      name: my-personal-computer-pipeline
       vmImage: $(vmImageName)
     steps:
     - task: UsePythonVersion@0
