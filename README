@@ -1,10 +1,10 @@
-# Web Scraping Project
+#Flipkartwebscrapper
 
-## Overview
+##Overview
 
 This project is a web scraping application developed using Python, Flask, Selenium, and BeautifulSoup. It scrapes product reviews including the product name, customer name, rating, comment heading, and full comment. The data is stored in a MongoDB database. The application is containerized using Docker and hosted on Azure Function Apps, with continuous integration set up through Azure DevOps.
 
-## Table of Contents
+##Table of Contents
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
@@ -16,7 +16,7 @@ This project is a web scraping application developed using Python, Flask, Seleni
 - [Contributing](#contributing)
 - [License](#license)
 
-## Features
+##Features
 
 - Scrapes product reviews from specified websites.
 - Extracts product name, customer name, rating, comment heading, and full comment.
