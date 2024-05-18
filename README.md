@@ -62,12 +62,12 @@ This project is a web scraping application built using Python, Flask, Selenium, 
 
 1. **Build the Docker image**
     ```sh
-    docker build -t flipkartwebscrapper .
+    docker build -t flipkartscrapper .
     ```
 
 2. **Run the Docker container**
     ```sh
-    docker run -d -p 5000:5000 flipkartwebscrapper
+    docker run -d -p 5000:5000 flipkartscrapper
     ```
 
 ### Deploy to Azure
