@@ -39,8 +39,8 @@ This project is a web scraping application built using Python, Flask, Selenium, 
 
 1. **Clone the repository**
     ```sh
-    git clone https://github.com/your-username/your-repo.git
-    cd your-repo
+    git clone https://github.com/AutoQAce/Flipkart-webscrapper.git
+    cd Flipkart-webscrapper
     ```
 
 2. **Create a virtual environment**
